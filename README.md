@@ -1,8 +1,5 @@
-# crime_identification_using_face_matching
----
-
 # Crime Identification Using Face Matching
-
+---
 **Crime Identification Using Face Matching** is a mobile application designed to streamline the process of identifying criminals using advanced face recognition technology. It empowers law enforcement officers to quickly retrieve detailed criminal records, ensuring accuracy and efficiency in criminal investigations.
 
 ---
