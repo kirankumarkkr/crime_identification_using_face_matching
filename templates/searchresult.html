@@ -1,0 +1,28 @@
+
+{% extends 'base.html' %}
+
+{% block title %}Criminal Details{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Criminal Details</div>
+                <div class="card-body">
+                    {% if criminal %}
+                    {% for i in criminal %}
+                    <h5 class="card-title">Name: {{ i.name }}</h5>
+                    <p class="card-text">Description: {{ i.description }}</p>
+                    <p class="card-text">Date of Birth: {{ i.date_of_birth }}</p>
+                    <p class="card-text">Address: {{ i.address }}</p>
+                    <p class="card-text">Criminal Record: {{ i.criminal_record }}</p>
+                    <img src="{{ i.photo.url }}" class="img-fluid" alt="{{ i.name }}">
+                    {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

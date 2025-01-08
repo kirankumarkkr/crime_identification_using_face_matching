@@ -1,0 +1,110 @@
+<style>
+    table,
+    th,
+    td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 6px;
+    }
+    </style>
+{% extends 'base.html' %}
+
+{% block title %}Criminals List{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <!-- <table>
+                    <div class="card-header">Criminal Details</div>
+                    <tr>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            ID
+                        </th>
+                        <th>
+                            Description
+                        </th>
+                        <th>
+                            D O B
+                        </th>
+                        <th>
+                            Address
+                        </th>
+                        <th>
+                            Criminal Record
+                        </th>
+                        <th>
+                            photo
+                        </th>
+                       
+                    </tr>
+                {% for lists in list  %}
+                
+                <div class="card-body">
+                    <tr>
+                    <td><p class="card-text">{{ lists.id }}</p></td>
+                    <td><h5 class="card-title">{{ lists.name }}</h5></td>
+                    
+                    <td><p class="card-text">{{ lists.description }}</p></td>
+                    <td><p class="card-text">{{ lists.date_of_birth }}</p></td>
+                    <td><p class="card-text">{{ lists.address }}</p></td>
+                    <td><p class="card-text">{{ lists.criminal_record }}</p></td>
+                
+                    <td colspan="6"><img src="{{ lists.photo.url }}" class="img-fluid" alt="{{ lists.name }}"></td>
+
+                    </tr>
+                </div>
+                {% endfor %}
+            </div>
+            </table> -->
+
+
+            <div class="card-header">Criminal Details</div>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <!-- <th scope="col">Description</th>
+                    
+                    <th scope="col">Address</th>
+                     -->
+                    <th scope="col">B O D</th>
+                    <th scope="col">Record</th>
+                    <th scope="col">Photo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for lists in list  %}
+                
+                    <tr scope="row">
+                    <td><p class="card-text">{{ lists.id }}</p></td>
+                    <td><h5 class="card-title">{{ lists.name }}</h5></td>
+                    
+                    <!-- <td><p class="card-text">{{ lists.description }}</p></td>
+                    
+                    <td><p class="card-text">{{ lists.address }}</p></td>
+                     -->
+
+                    <td><p class="card-text">{{ lists.date_of_birth }}</p></td>
+                    <td><p class="card-text">{{ lists.criminal_record }}</p></td>
+                
+                    <td colspan="6"><img src="{{ lists.photo.url }}" class="img-fluid" alt="{{ lists.name }}"></td>
+
+                    </tr>
+
+                {% endfor %}
+
+                </tbody>
+              </table>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+{% endblock %}

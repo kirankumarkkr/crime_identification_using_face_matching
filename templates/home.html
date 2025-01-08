@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<header class="jumbotron jumbotron-fluid text-white bg-primary text-center">
+    <div class="container">
+        <h1 class="display-4">Crime Identification Using Face Matching</h1>
+        <p class="lead">A Mobile Application for Enhanced Crime Detection and Prevention</p>
+        <a href="#about" class="btn btn-light btn-lg">Learn More</a>
+    </div>
+</header>
+
+<section id="about" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>About Our Project</h2>
+                <p>This project focuses on identifying criminals using face matching technology. The mobile application enables real-time crime detection and assists law enforcement agencies in their efforts to maintain public safety.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="https://cdn.thewire.in/wp-content/uploads/2022/07/17161111/Screenshot-2022-07-17-at-4.10.06-PM-1024x796.png" class="img-fluid" alt="Crime Identification">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="features" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center">Features</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Real-time Detection</h5>
+                        <p class="card-text">Instantly matches faces with the database to identify potential criminals.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Mobile Integration</h5>
+                        <p class="card-text">Access the crime identification system from your mobile device anywhere, anytime.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">User-friendly Interface</h5>
+                        <p class="card-text">Easy-to-use interface designed for law enforcement and security personnel.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Contact Us</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputName">Name</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Your Name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Your Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputMessage">Message</label>
+                <textarea class="form-control" id="inputMessage" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer class="text-center py-4 bg-dark text-white">
+    <div class="container">
+        <p>&copy; 2024 Crime Identification Using Face Matching. All rights reserved.</p>
+    </div>
+</footer>
+{% endblock %}

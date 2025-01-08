@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Criminal Details{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Criminal Details</div>
+                <div class="card-body">
+                    <h5 class="card-title">Name: {{ criminal.name }}</h5>
+                    <p class="card-text">ID: {{ criminal.id }}</p>
+                    <p class="card-text">Description: {{ criminal.description }}</p>
+                    <p class="card-text">Date of Birth: {{ criminal.date_of_birth }}</p>
+                    <p class="card-text">Address: {{ criminal.address }}</p>
+                    <p class="card-text">Criminal Record: {{ criminal.criminal_record }}</p>
+                    <img src="{{ criminal.photo.url }}" class="img-fluid" alt="{{ criminal.name }}">
+                    {% for complaints in complaint %} 
+                    <p class="card-text"><b>Case No: {{ complaints.complaint_no }}</b></p>
+                    <p class="card-text">Crime Date: {{ complaints.crime_date }}</p>
+                    <p class="card-text">Crime Location: {{ complaints.crime_location }}</p>
+                    <p class="card-text">Evidence: {{ complaints.complaint_by }}</p>
+                    <p class="card-text">Criminal contact: {{ complaints.criminal_contact }}</p>
+
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
