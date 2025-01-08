@@ -1,6 +1,4 @@
 # crime_identification_using_face_matching
-Here's a professional **README.md** for your **Crime Identification Using Face Matching** project:
-
 ---
 
 # Crime Identification Using Face Matching
