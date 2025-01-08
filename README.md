@@ -132,6 +132,6 @@ This project is licensed under the [MIT License](LICENSE).
 ## 📧 **Contact**
 - **Author**: Kiran Kumar R  
 - **Email**: kirankumarkkr29@gmail.com  
-- **LinkedIn**: https://www.linkedin.com/in/kiran-kumar-065734273 .  
-- **Instagram**: https://www.instagram.com/_kiran_kumar_r_.
+- **LinkedIn**: [https://www.linkedin.com/in/kiran-kumar-065734273].  
+- **Instagram**: [https://www.instagram.com/_kiran_kumar_r_].
 
